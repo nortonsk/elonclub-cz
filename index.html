@@ -1,0 +1,94 @@
+---
+layout: default
+title: Elon Club
+nav: home
+---
+{%- include rel.html %}
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1>Klub uživatelů a příznivců elektromobilů nejen Tesla.</h1>
+      <p>Sdílíme zkušenosti, radíme a pomáháme si navzájem. Přidejte se k nám v diskusní skupině nebo přijďte na některý ze srazů v Praze. Členství je bezplatné.</p>
+      <div class="hero-actions">
+        <a class="btn" href="{{ site.cta.url }}">Přidat se do WhatsApp skupiny</a>
+        <a class="btn ghost" href="{{ rel }}srazy/">Kdy je další sraz</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="{{ rel }}assets/img/hero-cybertruck.jpg" alt="Tesla Cybertruck" width="1240" height="620" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="three">
+      <div>
+        <h3>Srazy</h3>
+        <p>Elon srazy pořádáme v Praze, tradičně v Hotelu Čertousy. Diskuse o EV tématech, příslušenství, lightshow a hlavně lidé, kteří elektromobily opravdu jezdí.</p>
+      </div>
+      <div>
+        <h3>Poradna</h3>
+        <p>Jak si vybrat novou nebo ojetou Teslu, jak nabíjet doma i na cestách, na co si dát pozor u pojištění a jak funguje Starlink.</p>
+      </div>
+      <div>
+        <h3>Cybertruck do Evropy</h3>
+        <p>V lednu 2024 jsme si objednali Founders Edition Cybertruck. Cílem projektu Cybertruckin.EU je dostat Cybertruck na evropské silnice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Novinky</h2>
+      <a href="{{ rel }}novinky/">Všechny novinky</a>
+    </div>
+    <ul class="news">
+      {%- for post in site.posts limit: 4 %}
+      <li>
+        {%- if post.image %}
+        <a href="{{ rel }}{{ post.url | remove_first: '/' }}" tabindex="-1" aria-hidden="true"><img src="{{ rel }}{{ post.image | remove_first: '/' }}" alt="" loading="lazy" width="440" height="275"></a>
+        {%- else %}
+        <span></span>
+        {%- endif %}
+        <div>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.t.date_format }}</time>
+          <h3><a href="{{ rel }}{{ post.url | remove_first: '/' }}">{{ post.title }}</a></h3>
+          <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 190 }}</p>
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Poradna</h2>
+    </div>
+    <div class="guides">
+      <a href="{{ rel }}jak-si-vybrat-teslu/"><h3>Jak si vybrat Teslu</h3><p>Nová nebo ojetá, kde ji koupit, na co se ptát a kde si ji nejdřív vyzkoušet.</p></a>
+      <a href="{{ rel }}nabijeni/"><h3>Nabíjení</h3><p>Nabíjení doma, na cestách po Česku i v zahraničí.</p></a>
+      <a href="{{ rel }}pojisteni/"><h3>Pojištění</h3><p>Zkušenosti členů s pojištěním elektromobilů.</p></a>
+      <a href="{{ rel }}starlink/"><h3>Starlink</h3><p>Satelitní internet od SpaceX: jak funguje, kde ho koupit a kde si ho půjčit.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Kontakt</h2>
+      <a href="{{ rel }}kontakt/">Podpořit klub a další kontakty</a>
+    </div>
+    <dl class="facts">
+      <dt>Spolek</dt><dd>{{ site.org.name }}, IČO {{ site.org.ico }}</dd>
+      <dt>Adresa</dt><dd>{{ site.org.street }}, {{ site.org.city }}</dd>
+      <dt>E-mail</dt><dd><a href="mailto:{{ site.org.email }}">{{ site.org.email }}</a></dd>
+      <dt>WhatsApp</dt><dd><a href="https://wa.me/{{ site.org.whatsapp_intl }}">{{ site.org.whatsapp }}</a></dd>
+    </dl>
+  </div>
+</section>

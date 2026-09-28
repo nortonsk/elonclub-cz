@@ -1,0 +1,80 @@
+title: Elon Club
+tagline: Klub uživatelů a příznivců elektromobilů nejen Tesla
+description: Elon Club z.s. sdružuje uživatele a příznivce elektromobilů v České republice. Srazy v Praze, poradna k výběru Tesly, nabíjení a Starlinku a projekt Cybertruck do Evropy.
+lang: cs
+url: "https://elonclub.cz"
+baseurl: ""
+timezone: Europe/Prague
+permalink: /:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+author: Elon Club z.s.
+logo: /assets/img/logo-red.png
+
+org:
+  name: ELON CLUB z.s.
+  street: Příčná 1892/4, Nové Město
+  city: 110 00 Praha 1, Česká republika
+  ico: "11964693"
+  email: chcivic@elonclub.cz
+  whatsapp: "+420 704 770 420"
+  whatsapp_intl: "420704770420"
+  bank: 42004202/2010
+  iban: CZ48 2010 0000 0000 4200 4202
+  registry: https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1141258&typ=PLATNY
+  statutes: https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=69271462&subjektId=1141258&spis=1273564
+  account: https://ib.fio.cz/ib/transparent?a=42004202
+
+socials:
+  - title: Facebook
+    url: https://www.facebook.com/elonclubcz/
+  - title: Instagram
+    url: https://instagram.com/elonclubcz
+  - title: X (Twitter)
+    url: https://twitter.com/ElonClubCz
+  - title: WhatsApp skupina
+    url: https://chat.whatsapp.com/Br2oJBZMTnpGKZBisCIhFL
+
+nav:
+  - { title: Novinky, url: /novinky/, key: novinky }
+  - { title: Srazy, url: /srazy/, key: srazy }
+  - { title: Poradna, url: /poradna/, key: poradna }
+  - { title: Starlink, url: /starlink/, key: starlink }
+  - { title: O nás, url: /o-nas/, key: o-nas }
+  - { title: Kontakt, url: /kontakt/, key: kontakt }
+
+cta:
+  title: Přidat se na WhatsApp
+  url: https://chat.whatsapp.com/Br2oJBZMTnpGKZBisCIhFL
+
+alt_site:
+  title: English version at elonclub.eu
+  url: https://elonclub.eu/
+
+t:
+  skip: Přeskočit na obsah
+  nav_label: Hlavní navigace
+  contact: Kontakt
+  follow: Sledujte nás
+  mission: Vytvořili jsme ELON CLUB pro sdružování uživatelů a příznivců elektromobilů v České republice za účelem veřejně prospěšného urychlení přechodu k udržitelným zdrojům energie a na elektromobilitu.
+  ico: IČO
+  date_format: "%-d. %-m. %Y"
+  all_news: Všechny novinky
+  news_slug: novinky
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: page, image: /assets/img/hero-cybertruck-og.jpg }
+  - scope: { path: "", type: posts }
+    values: { layout: post, nav: novinky, author: Elon Club }
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
