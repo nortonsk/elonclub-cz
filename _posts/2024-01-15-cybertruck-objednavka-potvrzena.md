@@ -6,8 +6,6 @@ categories: [novinky, cybertruck]
 image: /assets/img/cybertruck-order.png
 ---
 {% include rel.html %}
-
-
 Dámy a pánové, s radostí vám sdělujeme úžasnou novinku: máme objednaný Cybertruck! Ano, podařilo se nám získat rezervaci na Founders Edition Cybertrucku a nyní jsme úspěšně provedli objednávku. Teď přecházíme do další fáze našeho projektu, a to je převoz Cybertrucku do České republiky.
 
 ![Potvrzení objednávky Cybertrucku]({{ rel }}assets/img/cybertruck-order.png)

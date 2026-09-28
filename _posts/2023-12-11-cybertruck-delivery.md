@@ -7,8 +7,6 @@ image: /assets/img/cybertruck-afterparty.jpg
 excerpt: Exkluzivní reportáž z Cybertruck Delivery Eventu v Tesla Giga Factory v Austinu, Texas, a z toho, co všechno se kolem něj dělo.
 ---
 {% include rel.html %}
-
-
 ## Úvod
 
 Vítejte na stránkách Elon Clubu, kde vám přináším exkluzivní reportáž z nedávného Cybertruck Delivery Eventu v Tesla Giga Factory v Austinu, Texas. Tento článek vám poskytne přehled o této jedinečné události a mých osobních zkušenostech jako účastníka.

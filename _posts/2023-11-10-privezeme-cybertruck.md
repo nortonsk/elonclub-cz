@@ -6,8 +6,6 @@ categories: [novinky, cybertruck]
 image: /assets/img/hero-cybertruck.jpg
 ---
 {% include rel.html %}
-
-
 Vážení příznivci elektrických vozidel a milovníci Tesly, s radostí vám přinášíme nejnovější zprávy a aktualizace z naší vzrušující mise: přivést revoluční Tesla Cybertruck do Evropy!
 
 ![Tesla Cybertruck]({{ rel }}assets/img/hero-cybertruck.jpg)
